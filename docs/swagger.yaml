@@ -1,0 +1,25 @@
+basePath: /
+host: localhost:8080
+info:
+  contact:
+    email: me@ssyan.ru
+    name: Developer
+  description: API for OAuth using Go Fiber
+  license:
+    name: MIT
+    url: https://github.com/ssyan-dev/go-fiber-oauth/blob/main/LICENSE
+  title: Go Fiber OAuth
+  version: "1.0"
+paths:
+  /auth:
+    get:
+      description: Hello world!
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+      summary: Check status
+      tags:
+      - Auth
+swagger: "2.0"

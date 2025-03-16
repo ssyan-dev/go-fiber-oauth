@@ -1,0 +1,37 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "API for OAuth using Go Fiber",
+        "title": "Go Fiber OAuth",
+        "contact": {
+            "name": "Developer",
+            "email": "me@ssyan.ru"
+        },
+        "license": {
+            "name": "MIT",
+            "url": "https://github.com/ssyan-dev/go-fiber-oauth/blob/main/LICENSE"
+        },
+        "version": "1.0"
+    },
+    "host": "localhost:8080",
+    "basePath": "/",
+    "paths": {
+        "/auth": {
+            "get": {
+                "description": "Hello world!",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Check status",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        }
+    }
+}
