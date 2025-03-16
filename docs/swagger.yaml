@@ -22,4 +22,26 @@ paths:
       summary: Check status
       tags:
       - Auth
+  /auth/github:
+    get:
+      description: Redirect to GitHub Auth
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+      summary: GitHub OAuth
+      tags:
+      - Auth
+  /auth/github/callback:
+    get:
+      description: GitHub Auth Callback
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+      summary: GitHub Auth Callback
+      tags:
+      - Auth
 swagger: "2.0"

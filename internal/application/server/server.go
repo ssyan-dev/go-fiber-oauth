@@ -49,6 +49,10 @@ func (s *Server) registerRoutes() {
 	s.Http.Get("/docs/*", swagger.HandlerDefault)
 
 	authGroup := s.Http.Group("/auth")
-	authHandler := handlers.NewAuthHandler()
+	authHandler := handlers.NewAuthHandler(s.Config)
 	authGroup.Get("/", authHandler.GetHelloWorld)
+
+	// GitHub
+	authGroup.Get("/github", authHandler.GetGitHub)
+	authGroup.Get("/github/callback", authHandler.GetGitHubCallback)
 }

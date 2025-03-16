@@ -38,6 +38,40 @@ const docTemplate = `{
                     }
                 }
             }
+        },
+        "/auth/github": {
+            "get": {
+                "description": "Redirect to GitHub Auth",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "GitHub OAuth",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/auth/github/callback": {
+            "get": {
+                "description": "GitHub Auth Callback",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "GitHub Auth Callback",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
         }
     }
 }`
